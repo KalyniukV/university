@@ -1,3 +1,6 @@
+[![CircleCI](https://circleci.com/gh/KalyniukV/university.svg?style=svg)](https://circleci.com/gh/KalyniukV/university)
+
+
 # university
 University console application
 
