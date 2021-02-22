@@ -4,7 +4,7 @@ insert into lector(first_name, last_name, lector_degree, salary) values ('Bodnar
 insert into lector(first_name, last_name, lector_degree, salary) values ('Rarok', 'Lilia', 'ASSISTANT', 1000);
 insert into lector(first_name, last_name, lector_degree, salary) values ('Opria', 'Bogdana', 'ASSISTANT', 1000);
 
-insert into department(department_name, head_of_department) values ('Economics', 1);
+insert into department(department_name, head_of_department) values ('economics', 1);
 
 insert into department_lector(department_id, lector_id) values (1, 1);
 insert into department_lector(department_id, lector_id) values (1, 2);

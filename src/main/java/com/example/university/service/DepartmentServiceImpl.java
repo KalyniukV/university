@@ -17,23 +17,23 @@ public class DepartmentServiceImpl implements DepartmentService {
 
     @Override
     public Department getByDepartmentName(String departmentName) {
-        return departmentRepo.getByName(departmentName);
+        return departmentRepo.getByName(departmentName.toLowerCase());
     }
 
     @Override
     @Transactional
     public StatisticData getStatisticByDepartmentName(String departmentName) {
-        return departmentRepo.getStatisticByName(departmentName);
+        return departmentRepo.getStatisticByName(departmentName.toLowerCase());
     }
 
     @Override
     public BigDecimal getAverageSalaryByDepartmentName(String departmentName) {
-       return departmentRepo.getAverageSalary(departmentName).setScale(2, RoundingMode.HALF_UP);
+       return departmentRepo.getAverageSalary(departmentName.toLowerCase()).setScale(2, RoundingMode.HALF_UP);
     }
 
     @Override
     @Transactional
     public Integer getCountOfEmployeeByDepartmentName(String departmentName) {
-        return getByDepartmentName(departmentName).getLectors().size();
+        return getByDepartmentName(departmentName.toLowerCase()).getLectors().size();
     }
 }

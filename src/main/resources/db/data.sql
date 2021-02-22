@@ -18,9 +18,9 @@ insert into lector(first_name, last_name, lector_degree, salary) values ('Bilyk'
 insert into lector(first_name, last_name, lector_degree, salary) values ('Smorjevskyi', 'Uriy', 'ASSOCIATE_PROFESSOR', 2000);
 insert into lector(first_name, last_name, lector_degree, salary) values ('Motsyk', 'Rostyslav', 'ASSISTANT', 1000);
 
-insert into department(department_name, head_of_department) values ('Economics', 1);
-insert into department(department_name, head_of_department) values ('Historical', 6);
-insert into department(department_name, head_of_department) values ('Mathematical', 6);
+insert into department(department_name, head_of_department) values ('economics', 1);
+insert into department(department_name, head_of_department) values ('historical', 6);
+insert into department(department_name, head_of_department) values ('mathematical', 6);
 
 insert into department_lector(department_id, lector_id) values (1, 1);
 insert into department_lector(department_id, lector_id) values (1, 2);
